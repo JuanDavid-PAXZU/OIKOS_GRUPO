@@ -33,69 +33,6 @@ button[type=submit] {
   color: #838383;
 }
 
-.cont_input {
-  margin: 0 0 10px;
-}
-.cont_input input, .cont_input select, .cont_input textarea {
-  width: 100%;
-  background: #F2F2F2;
-  border: 1px solid #E1E1E1;
-  border-radius: 6px;
-  padding: 9px 10px;
-  box-sizing: border-box;
-}
-
-input[type=checkbox] {
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  background: #F2F2F2;
-  border: 1px solid #D8D8D8;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-}
-input[type=checkbox]::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Font Awesome 5 Pro";
-  font-size: 11px;
-  font-weight: 600;
-  color: #FFF;
-}
-input[type=checkbox]:checked {
-  background: #5077D6;
-  border: 1px solid #5077D6;
-}
-input[type=checkbox]:checked::before {
-  content: "\f00c";
-}
-
-.cont_submit {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.cont_politicas {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 0 0 20px;
-}
-.cont_politicas label {
-  text-align: left;
-  font-size: 13px;
-}
-.cont_politicas a {
-  text-decoration: underline;
-  color: #1A41E5;
-  font-weight: 400;
-}
-
 .col_img_contacto {
   position: relative;
   height: 100%;
