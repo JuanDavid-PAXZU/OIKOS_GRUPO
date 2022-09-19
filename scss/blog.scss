@@ -1,0 +1,161 @@
+.cnt_tob_not_dest{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+.cnt_not_dest{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+    &:hover{
+        .img_not_dest{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.img_not_dest{
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s;
+    }
+}
+ .cnt_inf_not_dest{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    box-sizing: border-box;
+    padding: 40px 40px 24px;  
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    .fecha_nota{
+        padding-right: 16px;
+        border-right: 1px solid #fff;
+    }
+    .autor_nota, .fecha_nota{
+        width: auto;
+        color: #fff;
+        font-weight: 600;
+    }
+    .btn_not{
+        color: #fff;
+    }
+}
+
+.row_fecha_autor{
+    display: flex;
+    gap: 16px;
+}
+.fecha_nota{
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--c_pri);
+    width: 100%;
+}
+.autor_nota{
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--c_pri);
+    width: 100%;
+    span{
+        font-weight: 600;
+    }
+}
+.h_not_dest{
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+    color: #fff;
+}
+.txt_not_dest{
+    font-size: 16px;
+    color: #fff;
+}
+.btn_not{
+    width: 100%;
+    color: var(--c_pri);    
+    text-decoration: underline;
+    padding-top: 8px;
+}
+.col_top_dest{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.cnt_otra_not_dest{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    &:hover{
+        background: var(--c_pri);
+        .img_otra_not_dest{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .h_otra_not_dest, .fecha_nota, .autor_nota, .btn_not{
+            color: #fff;
+        }
+    }
+}
+.img_otra_not_dest{
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s;
+    }
+}
+.inf_otra_not_dest{
+    width: 55%;
+    box-sizing: border-box;
+    padding: 24px 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cnt_fecha_autor{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.h_otra_not_dest{
+    font-size:20px;
+    line-height: 22px;
+    font-weight: 900;
+    color: var(--c_pri);    
+}
+
+
+@media screen and (max-width:1200px) { 
+}
+@media screen and (max-width:1050px) { 
+  
+}
+@media screen and (max-width:768px) { 
+
+}
+@media screen and (max-width:480px) { 
+  
+}
