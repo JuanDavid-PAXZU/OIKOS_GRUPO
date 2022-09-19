@@ -414,6 +414,8 @@ a.jp-disabled:hover {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  font-weight: 600;
+  display: inline-flex;
   &:before{
     content: "";
     width: 100%;
@@ -620,7 +622,7 @@ a.jp-disabled:hover {
 
 /* ESTILOS FORMULARIO */
 
-<<<<<<< HEAD
+
 .cont_input_x2{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -638,7 +640,7 @@ input, select, textarea{
   border-radius: 6px;
   padding: 9px 10px;
   box-sizing: border-box;
-=======
+}
 .cont_input{
   margin: 0 0 10px;
   input, select, textarea{
@@ -649,7 +651,7 @@ input, select, textarea{
       padding: 9px 10px;
       box-sizing: border-box;
   }
->>>>>>> blog
+
 }
 
 input[type=checkbox]{
