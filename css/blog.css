@@ -270,6 +270,7 @@
 /*******INTERNA********/
 .cnt_gen_noticias_interna {
   background-color: #FAFAFA;
+  position: relative;
 }
 
 .cnt_nota_int {
@@ -374,7 +375,164 @@
   padding: 8px 0;
 }
 
+.row_cta {
+  width: 100%;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.cnt_not_interes_int {
+  width: 100%;
+  padding: 32px 0;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.h_not_interes_int {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--c_pri);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.cnt_cards_not_interes_int {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.cnt_ant_sig_not_int {
+  width: 100%;
+}
+
+.bnt_ant_sig_nota {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 12px 20px;
+  position: fixed;
+  top: 30%;
+  width: 225px;
+  min-height: 110px;
+  overflow: hidden;
+  z-index: 1;
+}
+.bnt_ant_sig_nota:hover {
+  background: var(--c_pri);
+}
+.bnt_ant_sig_nota:hover .img_btn_ant_sig {
+  opacity: 0.08;
+}
+.bnt_ant_sig_nota:hover .cnt_h_ant_sig_not,
+.bnt_ant_sig_nota:hover .txt_ant_sig_not {
+  color: #fff;
+}
+.bnt_ant_sig_nota:hover .ic_ant_sig {
+  max-width: 100px;
+  color: #fff;
+}
+.bnt_ant_sig_nota.nota_ant, .bnt_ant_sig_nota.nota_sig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bnt_ant_sig_nota.nota_ant {
+  border-radius: 0 12px 12px 0;
+  text-align: left;
+  left: 0;
+}
+.bnt_ant_sig_nota.nota_ant:hover .ic_ant_sig {
+  padding-right: 8px;
+}
+.bnt_ant_sig_nota.nota_sig {
+  border-radius: 12px 0 0 12px;
+  text-align: right;
+  right: 0;
+}
+.bnt_ant_sig_nota.nota_sig:hover .ic_ant_sig {
+  padding-left: 8px;
+}
+.bnt_ant_sig_nota.nota_sig .cnt_h_ant_sig_not {
+  justify-content: flex-end;
+}
+
+.img_btn_ant_sig {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+.img_btn_ant_sig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cnt_h_ant_sig_not {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #282828;
+}
+
+.ic_ant_sig {
+  max-width: 0;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  font-size: 18px !important;
+}
+
+.txt_ant_sig_not {
+  width: 100%;
+  font-size: 14px;
+  line-height: 120%;
+  color: #282828;
+}
+
 /**********************/
+@media screen and (max-width: 1300px) {
+  /*******INTERNA********/
+  .bnt_ant_sig_nota {
+    width: 175px;
+  }
+  /**********************/
+}
+@media screen and (max-width: 1200px) {
+  /*******INTERNA********/
+  .cnt_ant_sig_not_int {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid #ccc;
+  }
+  .bnt_ant_sig_nota {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    width: 48%;
+    min-height: inherit;
+    max-width: 400px;
+    box-shadow: none;
+    border-radius: none;
+    background: transparent;
+  }
+  .cnt_h_ant_sig_not {
+    gap: 12px;
+  }
+  .ic_ant_sig {
+    max-width: 100px;
+  }
+  /**********************/
+}
 @media screen and (max-width: 1050px) {
   .h_oikos {
     font-size: 32px;
@@ -382,6 +540,8 @@
   .cnt_tob_not_dest, .cnt_bot_not {
     gap: 2%;
   }
+  /*******INTERNA********/
+  /**********************/
 }
 @media screen and (max-width: 768px) {
   .h_oikos {
@@ -404,6 +564,24 @@
     padding: 24px 0 0;
     gap: 0;
   }
+  /*******INTERNA********/
+  .cnt_nota_int {
+    padding: 32px 0 64px;
+  }
+  .col_compartir_nota {
+    min-width: inherit;
+  }
+  .h_nota_int {
+    font-size: 30px;
+  }
+  .txt_nota_int h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .txt_nota_int h3 {
+    font-size: 18px;
+  }
+  /**********************/
 }
 @media screen and (max-width: 480px) {
   .cnt_inf_not_dest {
@@ -430,4 +608,23 @@
   .cnt_inf_card_not {
     padding: 24px;
   }
+  /*******INTERNA********/
+  .cnt_redes_nota {
+    position: fixed;
+    top: 120px;
+    left: 0;
+  }
+  .row_fecha_autor .fecha_nota {
+    border: none;
+  }
+  .txt_nota_int {
+    padding-top: 0;
+  }
+  .cnt_cards_not_interes_int {
+    flex-direction: column;
+  }
+  .txt_ant_sig_not {
+    display: none;
+  }
+  /**********************/
 }/*# sourceMappingURL=blog.css.map */
