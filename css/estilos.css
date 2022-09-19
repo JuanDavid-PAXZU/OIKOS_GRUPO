@@ -664,7 +664,6 @@ a.jp-disabled:hover {
   }
 }
 /* ESTILOS FORMULARIO */
-<<<<<<< HEAD
 .cont_input_x2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -676,12 +675,18 @@ a.jp-disabled:hover {
 }
 
 input, select, textarea {
-=======
+  width: 100%;
+  background: #F2F2F2;
+  border: 1px solid #E1E1E1;
+  border-radius: 6px;
+  padding: 9px 10px;
+  box-sizing: border-box;
+}
+
 .cont_input {
   margin: 0 0 10px;
 }
 .cont_input input, .cont_input select, .cont_input textarea {
->>>>>>> blog
   width: 100%;
   background: #F2F2F2;
   border: 1px solid #E1E1E1;
