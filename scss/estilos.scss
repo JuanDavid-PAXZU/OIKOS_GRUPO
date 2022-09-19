@@ -413,6 +413,7 @@ a.jp-disabled:hover {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  display: inline-flex;
   &:before{
     content: "";
     width: 100%;
