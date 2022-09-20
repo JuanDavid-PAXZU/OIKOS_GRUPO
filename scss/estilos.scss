@@ -642,7 +642,7 @@ input, select, textarea{
   box-sizing: border-box;
 }
 .cont_input{
-  margin: 0 0 10px;
+  margin: 0px;
   input, select, textarea{
       width: 100%;
       background: #F2F2F2;
@@ -706,6 +706,26 @@ input[type=checkbox]{
   }
   
 }
+
+button[type=submit]{
+  outline: 0;
+  border: 0;
+  height: 36px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+input[type=file]::-webkit-file-upload-button{
+  background: linear-gradient(90deg, #28468D 0%, #466DCD 100%);
+  outline: 0;
+  border: 0;
+  color: #FFF;
+  padding: 8px 20px;
+  border-radius: 4px;
+  margin: 0 20px 0 0;
+}
+
 
 
 @media screen and (max-width:768px) { 

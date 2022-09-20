@@ -1,10 +1,3 @@
-button[type=submit] {
-  outline: 0;
-  border: 0;
-  height: 36px;
-  font-weight: 600;
-}
-
 .cuerpo {
   padding-top: 80px;
 }
@@ -129,6 +122,9 @@ button[type=submit] {
   transform: translate(-120px, 0);
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .form_contact::before {
   content: "";

@@ -48,4 +48,10 @@ h1 {
   color: #838383;
   margin: 0 0 10px;
   max-width: 480px;
+}
+
+.form_trabaje {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }/*# sourceMappingURL=trabaje_nosotros.css.map */
