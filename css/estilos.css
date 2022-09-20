@@ -840,4 +840,7 @@ input[type=file]::-webkit-file-upload-button {
   .logo_pri a {
     background-size: auto 70%;
   }
+  .cont_input_x2 {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=estilos.css.map */
