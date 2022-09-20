@@ -7,7 +7,6 @@
   padding: 20px 20px 60px;
   min-height: 500px;
   display: flex;
-  width: 100%;
   flex-direction: column;
 }
 .s_header_proveedores .miga {
@@ -28,17 +27,21 @@
   width: 100%;
   height: 100px;
   pointer-events: none;
+  z-index: 2;
 }
 
 .c_header_proveedores {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  transform: translateY(50px);
 }
 .c_header_proveedores picture {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 500px;
+  justify-self: center;
 }
 .c_header_proveedores picture img {
   width: 100%;
