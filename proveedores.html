@@ -6,6 +6,7 @@
     <title>Oikos Grupo</title>
 
     <link rel="stylesheet" href="plugins/Swiper/swiper.min.css">
+    <link rel="stylesheet" href="plugins/modal-video/modal-video.min.css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
     <link href="css/proveedores.css" rel="stylesheet" type="text/css">
 
@@ -74,22 +75,32 @@
   <main class="cuerpo">
       
     <section class="s_header_proveedores">
+
+        <div class="cnt_central my-0">
+            <div class="miga al-right">
+                <a href="">Miga de pan</a>
+                <span> &gt; </span>
+                <a href="">Miga de pan</a>
+            </div>
+        </div>
+        
         <div class="cnt_central">
+            
             <div class="c_header_proveedores">
                 <div class="col_info_prov">
                     <h1>Ingreso de
                         proveedores
                     </h1>
                     <h4>¿Cómo ser proveedor de Grupo Empresarial OIKOS?</h4>
-                    <div>El Grupo Empresarial Oikos S.A.S les extiende la invitación a registrarse como proveedor o contratista, ya que mediante este registro ustedes harán parte de nuestro <b> 'LISTADO DE CONTRATISTAS Y PROVEEDORES CONFIABLES'</b>el cual puede ser consultado por nuestros funcionarios desde todas nuestras obras y así continuar con los procesos de cotizaciones, licitaciones, compras y contrataciones.
+                    <div class="desc_txt" >El Grupo Empresarial Oikos S.A.S les extiende la invitación a registrarse como proveedor o contratista, ya que mediante este registro ustedes harán parte de nuestro <b> 'LISTADO DE CONTRATISTAS Y PROVEEDORES CONFIABLES'</b>el cual puede ser consultado por nuestros funcionarios desde todas nuestras obras y así continuar con los procesos de cotizaciones, licitaciones, compras y contrataciones.
                     </div>
                     <div class="ctas_prov">
-                        <a href="" class="btn">Volverse proveedor</a>
-                        <a href="" class="btn_video">Ver video <span class="fas fa-play"></span> </a>
+                        <a href="" class="btn contacto_h">Volverse proveedor</a>
+                        <a href="" class="btn_video js-video-button">Ver video <span class="fas fa-play"></span> </a>
                     </div>
                 </div>
                 <picture>
-                    <img src="" alt="">
+                    <img width="500" height="500" src="" alt="">
                 </picture>
             </div>
         </div>
@@ -99,11 +110,14 @@
         <div class="cnt_central">
             <div class="c_sesion_proveedor">
                 <picture>
-                    <img src="" alt="">
+                    <img width="413" height="514" src="images/diseno/proveedores/img1.jpg" alt="">
                 </picture>
                 <form action="" class="form_proveedores">
 
-                    
+                    <div class="h_oikos">
+                        Proveedor registrado
+                    </div>
+
                     <div class="desc_form">
                         Aquí podra actualizar sus datos, consultar pagos y descargar todos sus certificados de retención. Ingrese su usuario y contraseña.
                     </div>
@@ -121,8 +135,41 @@
                         <button type="submit" class="btn">Ingresar</button>
                     </div>
 
-
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="s_entradas_prov">
+        <div class="cnt_central">
+            <div class="c_entradas_prov">
+                <a href="" class="entry_card">
+                    <h3>CONSTRUCTORA</h3>
+                    <div>Dpto de Compras & Contratación Gerencia Constructora
+                    </div>
+                    <picture>
+                        <img width="305" height="289" src="" alt="">
+                    </picture>
+                    <div class="btn">Ingresar <span class="fas fa-chevron-up"></span> </div>
+                </a>
+                <a href="" class="entry_card">
+                    <h3>CONSTRUCTORA</h3>
+                    <div>Dpto de Compras & Contratación Gerencia Constructora
+                    </div>
+                    <picture>
+                        <img width="305" height="289" src="" alt="">
+                    </picture>
+                    <div class="btn">Ingresar <span class="fas fa-chevron-up"></span> </div>
+                </a>
+                <a href="" class="entry_card">
+                    <h3>CONSTRUCTORA</h3>
+                    <div>Dpto de Compras & Contratación Gerencia Constructora
+                    </div>
+                    <picture>
+                        <img width="305" height="289" src="" alt="">
+                    </picture>
+                    <div class="btn">Ingresar <span class="fas fa-chevron-up"></span> </div>
+                </a>
             </div>
         </div>
     </section>
@@ -135,7 +182,19 @@
 
   <script src="plugins/Swiper/swiper.min.js"></script>
     <script src="js/classie.js"></script>
+    <script src="plugins/modal-video/jquery-modal-video.min.js"></script>
+    <script src="plugins/modal-video/modal-video.min.js"></script>
     <script src="js/funciones.js"></script>
+
+    <script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			},
+      url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
+		});
+	</script>
 
 </body>
 
