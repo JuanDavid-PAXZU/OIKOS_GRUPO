@@ -1,5 +1,59 @@
 $(document).ready(function () {
 
+    /* PESTAÑAS CAMBIAR INFO */
+    
+    const catg = document.querySelectorAll(".tab");
+    const infCatg = document.querySelectorAll(".info_tab");
+
+    let selectCatg = null;
+    
+    catg.forEach((pest) => {
+       
+        pest.addEventListener("click", (e) => {
+            catg.forEach((el) => {
+                el.classList.remove("active");
+            });
+            e.currentTarget.classList.toggle("active");
+            
+            selectCatg = pest.dataset.cat;
+            
+            infCatg.forEach((infel) => {
+               if(infel.dataset.cat === selectCatg){
+                   infel.classList.add("active_info");
+               }else{
+                   infel.classList.remove("active_info");
+               } 
+            });
+        });
+        
+    });
+
+    const catg2 = document.querySelectorAll(".tab2");
+    const infCatg2 = document.querySelectorAll(".info_tab2");
+
+    let selectCatg2 = null;
+    
+    catg2.forEach((pest) => {
+       
+        pest.addEventListener("click", (e) => {
+            catg2.forEach((el) => {
+                el.classList.remove("active");
+            });
+            e.currentTarget.classList.toggle("active");
+            
+            selectCatg2 = pest.dataset.cat;
+            
+            infCatg2.forEach((infel) => {
+               if(infel.dataset.cat === selectCatg2){
+                   infel.classList.add("active_info");
+               }else{
+                   infel.classList.remove("active_info");
+               } 
+            });
+        });
+        
+    });
+
     /**** desplegar menu principal en movil ****/
 
     $('.btn_menu_movil').click(function(){
