@@ -627,10 +627,12 @@ a.jp-disabled:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  position: relative;
 }
 
 .cont_input{
   margin: 0 0 10px;
+  position: relative;
 }
 
 input, select, textarea{
@@ -801,5 +803,7 @@ input[type=file]::-webkit-file-upload-button{
       background-size: auto 70%;
     }
   }
-  
+  .cont_input_x2{
+    grid-template-columns: 1fr;
+  }
 }

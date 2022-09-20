@@ -1,0 +1,592 @@
+.cnt_top_quienes{
+    width: 100%;
+    height: 540px;
+    background: url(../images/diseno/quienes_somos/bg_top.jpg) center var(--c_pri);
+    background-size: cover;
+    position: relative;
+    .miga{
+        a, span{
+            color: #fff;
+        }
+    }
+    span.msk{
+        width: 100%;
+        height: 95px;
+        background: url(../images/diseno/quienes_somos/msk_top.png) bottom center;
+        background-size: 100% 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+    &:before{
+        content: "";
+        position:absolute;
+        top: 24px;
+        left: 16px;
+        background: url(../images/diseno/quienes_somos/dots_bg.svg);
+        background-size: 100% auto;
+        width: 93px;
+        height: 91px;
+        z-index: 1;
+    }
+    &:after{
+        content: "";
+        position:absolute;
+        bottom: 15%;
+        right: 120px;
+        background: url(../images/diseno/quienes_somos/arrow_bg.svg) no-repeat center;
+        background-size: 100% auto;
+        width: 200px;
+        height: 285px;
+        z-index: 1;
+    }
+    .cnt_central{
+        z-index: 3;
+    }
+}
+.cnt_gen_inf_top_quienes{
+    width: 100%;    
+}
+.h_quienes{
+    width: 100%;
+    font-size: 54px;
+    color: #fff;
+    font-weight:900;
+    text-align: center;
+}
+.cnt_inf_quienes{
+    width: 100%;
+    max-width: 895px;
+    display: flex;
+    margin: 0 auto;
+    padding: 48px 0;
+    gap: 14%;
+    z-index: 3;
+}
+.cnt_video_quienes{
+    width: 413px;
+    min-width: 413px;
+    position: relative;
+    &:before,&:after{
+        content: "";
+        width: 20px;
+        height: 69px;
+        position: absolute;
+        background: url(../images/diseno/quienes_somos/dots.svg) no-repeat center;
+    }
+    &:before{
+        top: 50%;
+        left: -40px;
+    }
+    &:after{
+        top: 0;
+        right: -40px;
+    }
+    span.play{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url(../images/diseno/quienes_somos/play.svg) no-repeat center #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -26px;
+    }
+}
+.img_vid_quienes{
+    width: 100%;
+    height: auto;
+    border: 10px solid #FFFFFF;
+    box-shadow: 13px 4px 51px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    box-sizing: border-box;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+.inf_vid_quienes{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 48px;
+    span{
+        display: block;
+        font-size: 16px;
+        line-height: 88%;
+        font-size: 600;
+        &.year_quienes{
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 97%;
+            font-family: 'Oswald', sans-serif;
+        }
+    }
+}
+.txt_vid_quienes{
+    font-size: 18px;    
+    margin-top: 16px;
+}
+.s_lineas_neg{
+    width: 100%;
+    padding: 196px 0 40px;
+    position: relative;
+    &:before, &:after{
+        content: "";
+        width: 198px;
+        height: 469px;
+        position: absolute;
+        pointer-events: none;
+        background: url(../images/diseno/quienes_somos/bg_grey_arrow.png);
+        z-index: 1;
+    }
+    &:before{
+        bottom: 0;
+        left: 0;
+    }
+    &:after{
+        top: 30%;
+        right: 0;
+        transform: rotate(180deg);
+    }
+}
+.cnt_gen_inf_lineas{
+    width: 100%;
+    max-width:1124px;
+    margin: auto;
+    padding: 24px 0 40px;
+    position: relative;
+    z-index: 2;
+}
+.cnt_tabs_lineas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    gap: 16px;
+}
+.tab_linea{
+    width: 32%;
+    max-width: 274px;
+    height: 78px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        .slide_btn_linea{
+            left: -35%;
+            padding-right: 25%;
+        }
+    }
+    &.active{
+        .slide_btn_linea{
+            left: -5%;
+            padding-right: 55%;
+            img{
+                transform: translateX(50%) skewX(20deg);
+            }
+        }
+    }
+    &.inmb{
+        .slide_btn_linea{
+            background:#036EFF;    
+        }
+    }
+    &.cnst{
+        .slide_btn_linea{
+            background: linear-gradient(135.57deg, #4565B3 0%, #2B478B 54.17%, #13203E 100%);
+        }
+    }
+    &.strg{
+        .slide_btn_linea{
+            background: #FFEC00;
+        }
+    }
+}
+.img_tab_linea{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;    
+    }    
+}
+.slide_btn_linea{
+    width: 110%;
+    height: 100%;
+    background: grey;
+    transform: skewX(-20deg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 32px;
+    position: absolute;
+    left: -65%;
+    top: 0;
+    img{
+        width: auto;
+        height: 60%;
+        transform: skewX(20deg);
+        object-fit: contain;
+    }
+}
+.cnt_slides_inf_lineas{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 13px 82px -13px rgba(68, 83, 166, 0.29);
+    border-radius: 26px;
+    position: relative;
+    z-index: 1;
+    margin-top: -40px;
+    box-sizing:border-box;
+    padding: 80px 56px 0;
+    &:before,&:after{
+        content: "";
+        width: 20px;
+        height: 69px;
+        position: absolute;
+        background: url(../images/diseno/quienes_somos/dots.svg) no-repeat center;
+    }
+    &:before{
+        top: 40px;
+        left: 3%;
+    }
+    &:after{
+        bottom: 40px;
+        right:3%;
+    }
+}
+.cnt_inf_linea{
+    width: 100%;
+    display: flex;  
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;  
+    transition: none; 
+    &.inmb{
+        .col_img_inf_linea{
+            &:before{
+                background: #036EFF;
+            }
+        }
+    }
+    &.cnst{
+        .col_img_inf_linea{
+            &:before{
+                background: linear-gradient(135.57deg, #4565B3 0%, #2B478B 54.17%, #13203E 100%);
+            }
+        }
+    }
+    &.strg{
+        .col_img_inf_linea{
+            &:before{
+                background: #FFEC00;
+            }
+        }
+    }
+    &.active_info{
+        position: relative;
+        opacity: 1;
+        z-index: 1;  
+        transition: all .6s; 
+    }
+}
+.col_img_inf_linea{
+    width: 338px;
+    min-width: 338px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    img{
+        display: block;   
+        position: relative;
+        z-index: 2; 
+    }
+    &::before{
+        content: "";
+        width: 328px;
+        height: 328px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin:auto;
+        background: grey;
+    }
+}
+.col_inf_linea{
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 48px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.txt_inf_linea{
+    width: 100%;
+    font-size: 15px;
+    color: #454545;
+    padding: 16px 0;
+    a{
+        color: var(--c_link);
+    }
+}
+.btn_ir_linea{
+    align-self: start;
+    margin: 24px 0;
+    font-size: 20px;
+}
+.cnt_gen_mis_vis{
+    width: 100%;
+    background: #F0F2F7;
+    border-radius: 89px;
+    margin-top: -250px;
+    padding: 300px 64px 64px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.row_mis_vis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+}
+.col_mis_vis{
+    width: 48%;
+    max-width: 414px;    
+}
+.h_mis_vis{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    color: var(--c_pri);
+    text-transform: uppercase;
+    padding: 16px 0;
+}
+.ic_mis_vis{
+    display: block;
+    width: 56px;
+    height: 56px;
+    img{
+        max-width: 100%;
+    }
+}
+.txt_mis_vis{
+    width: 100%;
+    font-size: 16px;
+    color:#676767;
+    text-align: left;
+}
+.row_valores{
+    width: 100%;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.h_valores{
+    width: 100%;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--c_pri);
+}
+.list_valores{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.itm_valor{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px 24px;
+    border-radius: 24px;
+    color: #474747;  
+    background: #fff;  
+}
+.s_historia{
+    width: 100%;
+    
+}
+.cnt_gen_nuestra_historia{
+    width: 100%;
+    padding: 56px 0;
+}
+.txt_intro_historia{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    font-size: 16px;
+    color: #313131;
+    margin: auto;
+}
+.cnt_row_mod_hist{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 48px 0;
+}
+.col_tabs_hist{
+    width: 305px;
+    min-width: 305px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.tab_hist{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: -12px 0px 22px -6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:before{
+        content: "";
+        width: 68px;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        transition: all .3s;
+    }
+    &:hover, &.active{
+        &::before{
+            width: 100%;
+        }
+        .txt_tab_hist{
+            color: #fff;
+        }
+    }
+    &.group{
+        &:before{
+            background: linear-gradient(270deg, #4565B3 0%, #162D64 100%);;
+        }
+    }
+    &.cnst{
+        &:before{
+            background: var(--c_pri);
+        }
+    }
+    &.inmb{
+        &:before{
+            background: #036EFF;
+        }
+    }
+    &.strg{
+        &:before{
+            background: #FFEC00;
+        }
+        &:hover{
+            .txt_tab_hist{
+                color: #000;
+            }
+        }
+    }
+}
+.ic_tab_hist{
+    width: 68px;
+    height: 68px;
+    box-sizing: border-box;
+    padding: 16px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.txt_tab_hist{
+    flex-grow: 1;
+    font-size: 16px;
+    color: var(--c_pri);
+    font-weight: 800;
+    text-align: left;
+    position: relative;
+}
+.cnt_gen_col_inf_hist{
+    flex-grow: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 26px rgba(19, 44, 107, 0.16);
+    border-radius: 21px;
+    position: relative;
+    padding: 32px 40px;
+    box-sizing: border-box;
+}
+.cnt_inf_h{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 48px;
+}
+.col_img_hist{
+    width: 45%;
+    position:relative;
+    overflow: hidden;
+}
+.img_inf_hist{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+.logo_inf_hist{
+    width: 172px;
+    height: 108px;
+    padding: 16px 28px 32px;
+    box-sizing: border-box;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    background: url(../images/diseno/quienes_somos/bg_logo_historia.png) no-repeat center;
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.col_txt_hist{
+    width: 55%;
+    text-align: left;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+@media screen and (max-width:1200px) {}
+@media screen and (max-width:1050px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:480px) {}
