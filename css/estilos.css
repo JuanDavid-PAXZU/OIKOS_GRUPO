@@ -765,6 +765,66 @@ input[type=file]::-webkit-file-upload-button {
   margin: 0 20px 0 0;
 }
 
+.cont_submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cont_redes_sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0;
+  gap: 10px;
+}
+.cont_redes_sociales h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #182360;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_red {
+  background: #fafafa;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  color: #182360;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms ease-out;
+}
+.btn_red span {
+  transition: 300ms ease-out;
+}
+.btn_red:hover {
+  background: #182360;
+  color: #FFF;
+}
+
+.al-right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.al-left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.al-center {
+  text-align: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 480px) {
   .nav_bar_h {
     padding: 0 8px;
