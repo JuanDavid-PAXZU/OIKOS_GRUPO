@@ -33,6 +33,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 .col_info_prov{
     text-align: left;
@@ -117,18 +127,20 @@ h4{
 
 .c_sesion_proveedor{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
     justify-items: center;
     max-width: 950px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     picture{
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         max-width: 413px;
+        height: 100%;
+        min-height: 514px;
         &:before{
             content: '';
             position: absolute;
@@ -156,5 +168,192 @@ h4{
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+
+.form_proveedores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .h_oikos{
+        text-align: left;
+        line-height: 1;
+        padding: 0 0 20px;
+        &:before{
+            content:'INICIA SESIÓN';
+        }
+    }
+    .desc_form{
+        text-align: left;
+        margin: 0 0 10px;
+    }
+    .cont_submit{
+        margin: 20px 0 0;
+        .btn{
+            width: 180px;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+
+input[type=password] + span{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.restaurar_pass{
+    color: #182360;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.c_entradas_prov{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto 80px;
+}
+
+.entry_card{
+    overflow: hidden;
+    width: 100%;
+    min-height: 290px;
+    display: flexd;
+    position: relative;
+    border-radius: 8px;
+    &:hover{
+        transform: scale(1.04);
+        box-shadow: 0px 25px 25px -17px rgba(34, 51, 111, 0.47);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(to top, #112572 26.98%, #164EDD 118.66%);
+        z-index: 1;
+        left: 0;
+        right: 0;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: url('../images/diseno/proveedores/curva_card.svg') no-repeat center;
+        z-index: 1;
+        top:65px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 40px;
+    }
+    .txt_card{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+        color: #FFF;
+        padding: 10px;
+        box-sizing: border-box;
+        line-height: 1.2;
+        h3{
+            font-weight: 800;
+            font-size: 18px;
+        }
+        div{
+            font-size: 14px;
+            max-width: 260px;
+            margin: auto;
+        }
+    }
+    picture{
+        display: flex;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        img{
+            transition: 400ms ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .btn{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .c_header_proveedores{
+        grid-template-columns: 1fr;
+    }
+    .c_sesion_proveedor{
+        gap: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    h1{
+        font-size: 32px;
+    }
+    .h_oikos{
+        font-size: 32px;
+    }
+    .c_entradas_prov{
+        grid-template-columns: 1fr;
+    }
+    .entry_card::after{
+        background-size: cover;
+        background-position: bottom;
+        height: 80px;
+    }
+    .c_sesion_proveedor{
+        grid-template-columns: 1fr;
+    }
+    .c_sesion_proveedor picture{
+        max-width: initial;
+        max-height: 300px;
+        min-height: initial;
+        width: 100%;
+    }
+    .c_sesion_proveedor picture:before, .c_sesion_proveedor picture:after{
+        display: none;
+    }
+    .s_header_proveedores{
+        padding: 0 0 60px;
+    }
+    .ctas_prov{
+        align-items: baseline;
+    }
+    .cnt_central{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:480px){
+    .ctas_prov{
+        gap: 20px;
+        align-items: baseline;
     }
 }
