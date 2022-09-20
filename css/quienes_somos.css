@@ -86,7 +86,7 @@
   top: 0;
   right: -40px;
 }
-.cnt_video_quienes span.play {
+.cnt_video_quienes .play {
   display: block;
   width: 60px;
   height: 60px;
@@ -96,8 +96,32 @@
   top: 50%;
   transform: translateY(-50%);
   right: -26px;
+  cursor: pointer;
+}
+.cnt_video_quienes .play:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  animation: wave_play 2s infinite;
+  transition: all 0.3s;
+  border-radius: 50%;
 }
 
+@keyframes wave_play {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 .img_vid_quienes {
   width: 100%;
   height: auto;
@@ -141,7 +165,7 @@
 
 .s_lineas_neg {
   width: 100%;
-  padding: 196px 0 40px;
+  padding: 116px 0 40px;
   position: relative;
 }
 .s_lineas_neg:before, .s_lineas_neg:after {
@@ -437,7 +461,7 @@
 
 .cnt_gen_nuestra_historia {
   width: 100%;
-  padding: 56px 0;
+  padding: 16px 0 56px;
 }
 
 .txt_intro_historia {
@@ -506,12 +530,13 @@
 .tab_hist.strg:before {
   background: #FFEC00;
 }
-.tab_hist.strg:hover .txt_tab_hist {
+.tab_hist.strg:hover .txt_tab_hist, .tab_hist.strg.active .txt_tab_hist {
   color: #000;
 }
 
 .ic_tab_hist {
   width: 68px;
+  min-width: 68px;
   height: 68px;
   box-sizing: border-box;
   padding: 16px 12px;
@@ -549,8 +574,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  position: relative;
   gap: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: none;
+}
+.cnt_inf_h.active_info {
+  position: relative;
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 .col_img_hist {
@@ -587,4 +621,46 @@
   text-align: left;
   font-size: 16px;
   color: #4d4d4d;
+}
+
+@media screen and (max-width: 1050px) {
+  .cnt_slides_inf_lineas {
+    padding: 80px 5% 0;
+  }
+  .cnt_inf_linea {
+    gap: 24px;
+  }
+  .col_img_inf_linea {
+    min-width: inherit;
+    width: 45%;
+  }
+  .col_img_inf_linea::before {
+    width: 34vw;
+    height: 34vw;
+  }
+  .col_img_inf_linea img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .col_inf_linea {
+    width: 55%;
+    padding: 0;
+  }
+  .cnt_row_mod_hist {
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .col_tabs_hist {
+    min-width: inherit;
+    width: 30%;
+    position: sticky;
+    top: 90px;
+  }
+  .ic_tab_hist {
+    width: 58px;
+    min-width: 58px;
+  }
+  .cnt_gen_col_inf_hist {
+    width: 70%;
+  }
 }/*# sourceMappingURL=quienes_somos.css.map */
