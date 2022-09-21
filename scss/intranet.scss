@@ -1,0 +1,199 @@
+.cnt_gen_intranet{
+    width: 100%;
+    display: flex;
+}
+.col_izq_intranet{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .miga{
+        box-sizing: border-box;
+        padding-left: 10%;    
+    }
+}
+.col_cont_izq_intranet{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 110px;
+    &:before, &:after{
+        content: "";
+        position: absolute;
+    }
+    &:before{
+        width: 20px;
+        height: 69px;
+        top: 0px;
+        right: 64px;
+        background: url(../images/diseno/quienes_somos/dots.svg) no-repeat center;
+    }
+    &:after{
+        width: 76px;
+        height: 43px;
+        bottom: 48px;
+        left: 56px;
+        background: url(../images/diseno/intranet/dots.png) no-repeat;
+    }
+    .sombra{
+        display: block;
+        width: 90%;
+        height: 429px;
+        background: rgba(225,233,238,.7);
+        position: absolute;
+        bottom: -280px;
+        border-radius: 50%;
+        left: 5%;
+        filter: blur(72px);
+    }
+}
+.cnt_inf_int{
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;   
+    position: relative; 
+}
+.img_intr{
+    width: 100%;
+    text-align: center;
+}
+
+.h_intranet{
+    width: 100%;
+    font-size: 20px;
+    line-height: 119%;
+    color: var(--c_pri);
+    span{
+        font-weight: 900;
+        font-size: 24px;    
+    }    
+}
+.col_der_intranet{
+    width:565px;
+    min-width: 565px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:72px;
+    box-sizing: border-box;
+    padding: 88px 56px 48px;
+    position: relative;
+    background: #0A102D;
+    border-radius: 30px 0 0 30px;
+    &:before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 69px;
+        bottom: 32px;
+        left: 32px;
+        background: url(../images/diseno/quienes_somos/dots.svg) no-repeat center;
+    }
+}
+.cnt_bienvenida{
+    display: flex;
+    flex-direction: column;
+}
+.h_bienv_int{
+    width: 100%;
+    font-size:54px ;
+    font-weight: 900;
+    color: #fff;
+}
+.txt_bienv_int{
+    width: 100%;
+    font-size:15px ;
+    text-align: center;    
+    color: #fff;
+}
+.form_intr{
+    width: 100%;
+    max-width:371px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .cont_submit{
+        justify-content: center;
+        text-align: center;  
+        padding: 40px 0 0 ;  
+        .btn{
+            min-width: 177px;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+.row_olv_pw{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top:-10px;
+    a{
+        font-size: 13px;
+        color: #fff;
+        &:hover{
+            color: var(--c_link);
+        }
+    }
+}
+.cnt_redes_int{
+    display: flex;
+    .red_pie{
+        border-radius: 4px;
+    }
+}
+.col_der_intranet{
+    padding: 40px 8% ;
+}
+
+@media screen and (max-width:1050px){
+    .col_izq_intranet, .col_der_intranet{
+        width: 50%;
+        min-width: inherit;
+    }
+    .img_intr{
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:768px){
+   .cnt_gen_intranet{
+        flex-direction: column;
+    }
+    .col_izq_intranet, .col_der_intranet{
+        width: 100%;
+    }
+    .col_cont_izq_intranet{
+        padding-bottom: 24px;
+        &:before{
+            right: 0;
+        }
+        &:after{
+            left: 0;
+        }
+    }
+    .col_der_intranet{
+        border-radius: 24px 24px 0 0;   
+        padding: 40px 32px; 
+        gap: 32px;
+    }
+    .cnt_bienvenida{
+        max-width: 371px;
+    }
+    .h_bienv_int{
+        font-size: 30px;
+    }
+    .img_intr{
+        max-width: 190px;
+    }
+}
+@media screen and (max-width:480px){
+
+}
