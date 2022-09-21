@@ -635,6 +635,7 @@ a.jp-disabled:hover {
 .form_susc{
   width: 100%;
   display: flex;
+  gap: 10px;
   padding: 8px 0;
 }
 .campo_susc_pie{
@@ -652,8 +653,10 @@ a.jp-disabled:hover {
   color: #000;
   border: 1px solid #ccc;
   cursor: pointer;
+  font-weight: 600;
   &:hover{
-    background: var(--c_pri);  
+    background: var(--c_pri); 
+    color: #FFF; 
   }
 }
 .datos_pie{
