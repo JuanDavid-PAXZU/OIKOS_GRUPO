@@ -143,7 +143,7 @@
     <section class="s_entradas_prov">
         <div class="cnt_central">
             <div class="c_entradas_prov">
-                <a href="" class="entry_card">
+                <a class="entry_card">
                     <div class="txt_card">
                         <h3>CONSTRUCTORA</h3>
                         <div>Dpto de Compras & Contratación Gerencia Constructora
@@ -154,7 +154,7 @@
                     </picture>
                     <div class="btn">Ingresar <span class="fas fa-chevron-up"></span> </div>
                 </a>
-                <a href="" class="entry_card">
+                <a class="entry_card">
                     <div class="txt_card">
                         <h3>ADMINISTRATIVO</h3>
                         <div>Dpto Administrativo Gerencia Administrativa
@@ -165,7 +165,7 @@
                     </picture>
                     <div class="btn">Ingresar <span class="fas fa-chevron-up"></span> </div>
                 </a>
-                <a href="" class="entry_card">
+                <a class="entry_card">
                     <div class="txt_card">
                         <h3>DEPARTAMENTO IT</h3>
                         <div>Dpto de IT Gerencia Administrativa
@@ -181,6 +181,49 @@
     </section>
 
     <!-- MODALS ENTRY CARDS -->
+
+    <section class="s_modal_form">
+            <span class="close_modal"></span>
+            <form class="c_modal_form">
+                <h3>CONSTRUCTORA</h3>
+                <div class="txt_desc_modal">
+                    Dpto de Compras & Contratación
+Gerencia Constructora
+                </div>
+                <div class="container">
+                    <div class="cont_input_x2">
+                        <input type="text" placeholder="Nombre *" required>
+                        <input type="text" placeholder="Nombre o razón social">
+                    </div>
+                    <div class="cont_input nit">
+                        <input type="number" placeholder="NIT">
+                        <span> - </span>
+                        <input type="number">
+                    </div>
+                    <div class="cont_input">
+                        <input type="email" required placeholder="Email">
+                    </div>
+                    <div class="cont_input">
+                        <input type="number" placeholder="Teléfono / Celular">
+                    </div>
+                    <div class="cont_input">
+                        <input type="text" placeholder="Actividad económica">
+                    </div>
+                    <div class="cont_input">
+                        <textarea name="" id="" cols="30" rows="4" placeholder="Resumen actividad"></textarea>
+                    </div>
+                    <div class="cont_chk">
+                        <input type="checkbox" name="" id="">
+                        <label for=""> Acepto y Autorizo la <a href=""> Política de Tratamiento de Datos</a></label>
+                    </div>
+                    <div class="cont_submit al-center">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+
+                </div>
+            </form>
+        
+    </section>
 
     
 
@@ -367,6 +410,21 @@
 			},
       url: "https://developer.a-blogcms.jp/themes/developer/movies/280.mp4"
 		});
+
+
+        /* FUNCION MODAL */
+
+        const btn = document.querySelectorAll('.entry_card .btn');
+        const modal = document.querySelectorAll('.s_modal_form');
+        const closeModal = document.querySelectorAll('.close_modal');
+
+        $(btn).click(function(){
+            $(modal).fadeToggle().css('display', 'flex');
+        });
+        $(closeModal).click(function(){
+            $(modal).fadeToggle()
+        });
+
 	</script>
 
 </body>
