@@ -320,6 +320,7 @@
         opacity: 1;
         z-index: 1;  
         transition: all .6s; 
+        z-index: 1;
     }
 }
 .col_img_inf_linea{
@@ -573,10 +574,12 @@
     left: 0;
     opacity: 0;
     transition: none;
+    z-index: -2;
     &.active_info{
         position: relative;
         opacity: 1;
         transition: all .5s;
+        z-index: 1;
     }
 }
 .col_img_hist{
@@ -653,11 +656,178 @@
         width: 58px;
         min-width: 58px;
     }
-    
-
+    .tab_hist{
+        &:before{
+            width: 58px;
+            min-width: 58px;
+        }
+    }
     .cnt_gen_col_inf_hist{
         width: 70%;
     }
+    .cnt_inf_h{
+        flex-direction: column;
+    }
+    .col_img_hist{
+        width: 60%;
+    }
+    .col_txt_hist{
+        width: 100%;
+    }
+    .s_lineas_neg{
+        &:before{
+            display: none;
+        }
+    }
 }
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .h_quienes{
+        font-size: 35px;    
+        padding-top: 16px;
+    }
+    .cnt_top_quienes {
+        height: auto;
+        background: #1d305c;
+        span.msk{
+            display: none;
+        }
+    }
+    .cnt_inf_quienes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cnt_video_quienes {
+        width: 100%;
+        max-width: 360px;
+        min-width: inherit;
+        .play{
+            right: 50%;
+            transform: translate(50%,-50%);
+            box-shadow: 0 20px 40px rgba(0,0,0,.75);
+        }
+        &:before,&:after{
+            display: none;
+        }
+    }
+    .inf_vid_quienes{
+        max-width: 360px;
+    }
+    .s_lineas_neg{
+        padding: 32px 0;
+        .h_oikos{
+            font-size: 30px;
+            line-height: 120%;
+        }
+    }
+    .tab_linea{
+        &.active{
+            .slide_btn_linea{
+                left: -11%;
+                padding-right: 59%;
+            }
+        }
+    }
+    .slide_btn_linea{
+        width: 120%;
+        padding: 0 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .cnt_inf_linea{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col_img_inf_linea{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        img{
+            height: auto;
+        }
+        &::before{
+            width: 40vw;
+            height: 40vw;
+            max-width: 200px;
+            max-height: 200px;    
+        }
+    }
+    .col_inf_linea{
+        width: 100%;    
+        padding-bottom: 24px;
+    }
+    .cnt_gen_mis_vis {
+        padding: 230px 5% 24px;
+    }
+    .row_mis_vis{
+        flex-flow: column;
+    }
+    .col_mis_vis{
+        width: 100%;
+    }
+    .row_valores{
+        padding: 32px 0;    
+    }
+    .h_valores{
+        font-size: 30px;
+    }
+    .cnt_gen_nuestra_historia{
+        .h_oikos{
+            font-size: 30px;    
+        } 
+    }
+    .cnt_row_mod_hist{
+        flex-direction: column;
+    }
+    .col_tabs_hist{
+        width: 100%;
+        flex-direction: row;   
+        gap: 2px; 
+    }
+    .tab_hist{
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0px 10px 22px -6px rgb(0 0 0 / 8%);
+        &:before {
+            width: 100%;
+            height: 35px;
+        }
+        &.active{
+            position: relative;
+            z-index: 2;
+            &:before{
+                height: 100%;
+            }
+        }
+    }
+    .ic_tab_hist{
+        width: 35px;
+        min-width: inherit;
+        height: 35px;    
+        padding: 6px 2px;
+    }
+    .txt_tab_hist{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 8px 8px;    
+        font-size: 11px;
+        line-height: 108%;
+        text-align: center;
+        font-weight: 400;
+    }
+    .cnt_gen_col_inf_hist{
+        padding:24px 8%;
+    }
+    .cnt_gen_col_inf_hist{
+        width: 100%;
+    }
+    .cnt_inf_h{
+        gap: 16px;    
+    }
+    .col_img_hist{
+        width: 100%;
+        max-width: 250px;    
+    }
+}
 @media screen and (max-width:480px) {}
