@@ -44,7 +44,7 @@
 .s_header_medios:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   right: 0;
   width: 100%;
@@ -75,6 +75,11 @@
   color: #FFF;
   max-width: 650px;
   margin: 0 auto;
+}
+
+.datos_post_medio {
+  font-size: 15px;
+  list-style: 1.3;
 }
 
 .s_logos_medios {
@@ -119,6 +124,9 @@
   max-width: 650px;
   margin: 0 auto 40px;
 }
+.cont_filtro select {
+  cursor: pointer;
+}
 .cont_filtro .btn {
   min-width: 120px;
   text-align: center;
@@ -148,6 +156,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  margin: 0 0 20px;
 }
 .card_medio_post h3 {
   color: #182360;
@@ -169,10 +178,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFF;
+  background-color: #EBEBEB;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .card_medio_post picture img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.holder {
+  margin: 60px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.holder a {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: 2px solid #182360;
+  color: #182360;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 18px;
+}
+.holder a.jp-disabled {
+  opacity: 0.4;
+}
+.holder a.jp-current {
+  color: #FFF;
+  background-color: #182360;
 }/*# sourceMappingURL=medios.css.map */

@@ -184,8 +184,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -199,8 +199,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -214,8 +214,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -229,8 +229,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -244,8 +244,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -259,8 +259,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -274,8 +274,8 @@
                             <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
-                            <h4>Fuente: Colombia Construye</h4>
-                            <h4>Fecha: 08 de marzo de 2021</h4>
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
                         </div>
                     </div>
                     <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
@@ -466,21 +466,29 @@
 
     <script>
         let swiper = new Swiper(".swiperMedios", {
-            slidesPerView:5,
+            slidesPerView:1,
             spaceBetween: 20,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
+                390: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
                 480: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20
                 },
                 768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                1920: {
                     slidesPerView: 5,
                     spaceBetween: 30
-                }
+                },
             }
         });
 
@@ -488,11 +496,15 @@
         $(function() {
             /* initiate plugin */
             $(".holder").jPages({
-                containerID: "itemContainer"
+                containerID: "itemContainer",
+                perPage:6,
+                minHeight:false,
+                next:"→",
+                previous:"←",
             });
         });
 
-    </script>
+    </script>͐
 
 </body>
 
