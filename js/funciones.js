@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+
+    var swiper = new Swiper(".cnt_car_proy_dest .swiper-container", {
+        slidesPerView: 3,
+        navigation: {
+            nextEl: ".cnt_car_proy_dest .swiper-button-next",
+            prevEl: ".cnt_car_proy_dest .swiper-button-prev",
+          },
+    });
+
     /* PESTAÑAS CAMBIAR INFO */
     
     const catg = document.querySelectorAll(".tab");
