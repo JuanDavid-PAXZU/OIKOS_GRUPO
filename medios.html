@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="plugins/Swiper/swiper.min.css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
-    <link href="css/blog.css" rel="stylesheet" type="text/css">
+    <link href="css/medios.css" rel="stylesheet" type="text/css">
 
     <!-- TIPOGRAFIA -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,10 +76,18 @@
     <section class="s_header_medios">
         <div class="cnt_central">
             <div class="c_header_medios">
+                
 
-                Miga
+                <div class="miga al-left">
+                    <a href="">Miga de pan</a>
+                    <span> &gt; </span>
+                    <a href="">Miga de pan</a>
+                </div>
 
-                <div class="txt_header">
+                <div class="h_oikos">
+                    Los medios
+                </div>
+                <div class="txt_header al-center">
                     Para conocer nuestra actualidad en los medios, lo invitamos a utilizar el filtro de búsqueda, donde podrá visualizar por mes, año y medio todas las novedades.
                 </div>
 
@@ -89,30 +97,195 @@
 
     <section class="s_logos_medios">
         <div class="cnt_central">
-             slider logos
+            <div class="c_logos_medios">
+                <!-- Swiper -->
+                <div class="swiper swiperMedios">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="128" height="86" src="images/diseno/medios/logo.jpg" alt="">
+                    </div>
+
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="fas fa-chevron-right"></span>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <span class="fas fa-chevron-left"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s_notas_medios">
         <div class="cnt_central">
             <div class="cont_filtro">
-
+                <select name="" id="">
+                    <option value="" selected disabled>Mes</option>
+                    <option value="">Enero</option>
+                    <option value="">Febrero</option>
+                    <option value="">Marzo</option>
+                    <option value="">Abril</option>
+                    <option value="">Mayo</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected disabled>Año</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                </select>
+                <select name="" id="">
+                    <option value="" selected disabled>Medio</option>
+                    <option value="">Medio 1</option>
+                    <option value="">Medio 2</option>
+                    <option value="">Medio 3</option>
+                    <option value="">Medio 4</option>
+                    <option value="">Medio 5</option>
+                </select>
+                <button type="search" class="btn">Filtrar</button>
             </div>
-            <div class="c_notas_medios">
+            <div class="c_notas_medios" id="itemContainer">
 
                 <div class="card_medio_post">
                     <div class="head_post_medio">
                         <picture>
-                            <img src="" alt="">
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4> <b> Fuente:</b> Colombia Construye</h4>
+                            <h4> <b> Fecha: </b> 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
                         </picture>
                         <div class="datos_post_medio">
                             <h4>Fuente: Colombia Construye</h4>
                             <h4>Fecha: 08 de marzo de 2021</h4>
                         </div>
                     </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
+                </div>
+                <div class="card_medio_post">
+                    <div class="head_post_medio">
+                        <picture>
+                            <img width="81" height="81" src="images/diseno/medios/logo.jpg" alt="">
+                        </picture>
+                        <div class="datos_post_medio">
+                            <h4>Fuente: Colombia Construye</h4>
+                            <h4>Fecha: 08 de marzo de 2021</h4>
+                        </div>
+                    </div>
+                    <h3>El SECTOR CONSTRUCTOR SE UNE A LA CAMPAÑA DE VACUNACIÓN CONTRA EL COVID </h3>
+                    <div class="resumen">
+                        De acuerdo con Luis Aurelio Díaz, Presidente del Grupo Oikos el panorama y expectativas del sector constructor y de vivienda para... 
+                    </div>
                 </div>
 
             </div>
+            <div class="holder"></div>
         </div>
     </section>
 
@@ -286,9 +459,40 @@
     </div>
   </footer>
 
-  <script src="plugins/Swiper/swiper.min.js"></script>
+    <script src="plugins/Swiper/swiper.min.js"></script>
+    <script src="plugins/jpages/jpages.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/funciones.js"></script>
+
+    <script>
+        let swiper = new Swiper(".swiperMedios", {
+            slidesPerView:5,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                }
+            }
+        });
+
+
+        $(function() {
+            /* initiate plugin */
+            $(".holder").jPages({
+                containerID: "itemContainer"
+            });
+        });
+
+    </script>
 
 </body>
 
