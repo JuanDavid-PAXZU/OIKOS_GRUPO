@@ -598,7 +598,11 @@ a.jp-disabled:hover {
 }
 
 .logo_pie {
-  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.logo_pie img {
+  width: 68px;
 }
 
 .txt_pie {

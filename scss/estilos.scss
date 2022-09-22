@@ -542,7 +542,11 @@ a.jp-disabled:hover {
   column-gap: 8%;
 }
 .logo_pie{
-  width: 20%;  
+  display: flex;
+  align-items: center;
+  img{
+    width: 68px;
+  }
 }
 .txt_pie{
   width: 100%;
