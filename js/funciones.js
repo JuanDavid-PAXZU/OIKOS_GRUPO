@@ -3,6 +3,14 @@ $(document).ready(function () {
 
     var swiper = new Swiper(".cnt_car_proy_dest .swiper-container", {
         slidesPerView: 3,
+        breakpoints:{
+            1050:{
+                slidesPerView: 2,
+            },
+            480:{
+                slidesPerView: 1,
+            },
+        },
         navigation: {
             nextEl: ".cnt_car_proy_dest .swiper-button-next",
             prevEl: ".cnt_car_proy_dest .swiper-button-prev",
