@@ -1,5 +1,19 @@
 .cnt_gen_noticias{
-    background: #f4f4f4;    
+    background: #f4f4f4;  
+    position: relative;  
+    z-index: 0;
+    &::before{
+        content: "";
+        width: 882px;
+        height: 429px;
+        background: rgba(225, 223, 238, 0.7);
+        filter: blur(72px);
+        position: absolute;
+        z-index: -1;
+        bottom: -10%;
+        left: 50%;
+        transform: translatex(-50%);
+    }
 }
 .cnt_tob_not_dest{
     width: 100%;
@@ -160,18 +174,6 @@
     display: flex;
     gap: 5%;
     overflow: hidden;
-    &::before{
-        content: "";
-        width: 882px;
-        height: 429px;
-        background: rgba(225, 223, 238, 0.7);
-        filter: blur(72px);
-        position: absolute;
-        z-index: -1;
-        bottom: -30%;
-        left: 50%;
-        transform: translatex(-50%);
-    }
 }
 .col_list_not{
     width: 70%;
@@ -473,6 +475,58 @@
 
 /**********************/
 
+.cnt_gen_banner_o_medios{
+    width: 100%;
+    max-width: 1065px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px;
+    margin: 0 auto 100px;
+}
+.img_banner_o_medios{
+    width: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+.col_banner_inf_o_medios{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 32px 48px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+}
+.h_oikos_medios{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--c_pri);
+    line-height: 104%;
+    span{
+        font-weight: 400;
+    }     
+    
+    &:hover{
+        color: var(--c_link);
+        span{
+            color: var(--c_link);
+        }
+    }
+    
+}
+.txt_oikos_medios{
+    color: #676767;
+}
+
+
+
 @media screen and (max-width:1300px) { 
     /*******INTERNA********/
     .bnt_ant_sig_nota{
@@ -526,6 +580,9 @@
         flex-direction: column;
         row-gap: 24px;
     }
+    .cnt_bot_not{
+        padding-bottom: 40px;
+    }
     .cnt_not_dest,.col_top_dest, .col_list_not, .col_list_not_dest{
         width: 100%;
     }
@@ -559,7 +616,15 @@
         }
     }
     /**********************/
-
+    .h_oikos_medios{
+        font-size: 30px;    
+    }
+    .cnt_gen_banner_o_medios{
+        flex-direction: column;
+    }
+    .img_banner_o_medios, .col_banner_inf_o_medios{
+        width: 100%;
+    }
 }
 @media screen and (max-width:480px) { 
     .cnt_inf_not_dest{
@@ -607,4 +672,5 @@
         display: none;
     }
     /*******************/
+    
 }

@@ -450,10 +450,17 @@
 .itm_valor {
   font-size: 14px;
   text-transform: uppercase;
-  padding: 4px 24px;
+  padding: 6px 16px;
   border-radius: 24px;
   color: #474747;
   background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.itm_valor span {
+  display: flex;
+  align-items: center;
 }
 
 .s_historia {
@@ -621,9 +628,25 @@
 
 .col_txt_hist {
   width: 55%;
+  max-height: 352px;
   text-align: left;
   font-size: 16px;
   color: #4d4d4d;
+  box-sizing: border-box;
+  padding-right: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.col_txt_hist::-webkit-scrollbar {
+  width: 6px;
+}
+.col_txt_hist::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 6px;
+}
+.col_txt_hist::-webkit-scrollbar-thumb {
+  background: #1d305c;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 1050px) {
